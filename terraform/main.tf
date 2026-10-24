@@ -41,7 +41,7 @@ resource "kubernetes_deployment_v1" "notes_api" {
         container {
           
           name              = "notes-api"
-          image             = "notes-api:local"
+          image             = "notes-api:metrics"
           image_pull_policy = "IfNotPresent"
 
           port {
